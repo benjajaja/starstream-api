@@ -1,10 +1,24 @@
+# Starstream api
 
-#### setTimeout(callback, ms)
-[See node.js api](http://nodejs.org/api/globals.html#globals_settimeout_cb_ms)
+#### [JavaScript built-in objects](http://es5.github.io/multi.html#x15-toc)
 
-#### setInterval
-[See MDN](https://developer.mozilla.org/en/docs/DOM/window.setInterval)
+#### [setTimeout(callback, ms)](http://nodejs.org/api/globals.html#globals_settimeout_cb_ms)
 
-#### nextTick
-[See MDN](https://developer.mozilla.org/en/docs/DOM/window.setInterval)
+#### [setInterval(callback, ms)](http://nodejs.org/api/globals.html#globals_setinterval_cb_ms)
 
+#### [nextTick(callback)](http://nodejs.org/api/process.html#process_process_nexttick_callback)
+
+## screen
+#### screen.write(string)
+Write string to player terminal. Does not automatically append newlines.
+
+## ship
+#### ship.thrusters
+Array of the ship's thrusters
+
+## Class: Thruster
+#### thruster.force([force])
+Sets thruster force if specified, returns current force
+
+    screen.write('Thruster force: ' + ship.thrusters[0].force(3));
+    // Thruster force: 3
