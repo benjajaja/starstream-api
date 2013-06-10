@@ -16,64 +16,91 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gipsy-king/starstream-api">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/gipsy-king/starstream-api">View latest API on github</a>
 
-          <h1 id="project_title">Starstream-api</h1>
-          <h2 id="project_tagline"></h2>
+          <h1 id="project_title">Starstream (prototype)</h1>
+          <h2 id="project_tagline">WebGL multiplayer space shooter +programmable ships</h2>
 
-            <section id="downloads">
+            <!--<section id="downloads">
               <a class="zip_download_link" href="https://github.com/gipsy-king/starstream-api/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/gipsy-king/starstream-api/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+            </section>-->
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2>What is it?</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<!--<ul>
+  <li><a href="#info">Space flight &amp; fight simulation</a></li>
+  <li><a href="#web">Web based</a></li>
+  <li>Programmable ship</li>
+</ul>-->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h4 id="info">Space flight &amp; fight simulation</h4>
+<p>
+  Navigate and explore space. Blow up stuff. Collect scrap. Build stuff.
+</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<h4 id="info">Where can I play it?</h4>
+<p>
+  Unfortunately, there is not even an alpha version avaialable yet. You may peek at your own risk at
+  the development progress here: <a href="http://spacetit.heroku.com">http://spacetit.heroku.com</a>
+</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h4 id="info">Physics</h4>
+<p>
+  Crash into stuff, or smash things together. Simulation runs both on client and server!
+</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h4 id="web">Web based</h4>
+<p>
+  Runs in your browser with WebGL. Has cool stuff like shaders.
+</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h4 id="multi">Multiplayer</h4>
+<p>Multiplayer by default, with websockets. You will be able to set up your own local servers.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h4 id="program">Programmable ship</h4>
+<p>
+  Ships expose an <a href="https://github.com/gipsy-king/starstream-api">API</a> to be programmed in JavaScript.
+  Code runs on the server, safely, in it's own process. Github gist and/or repo integration planned.
+</p>
+<p>
+  Example API features:
+  <ul>
+    <li>Thrusters' force</li>
+    <li>Sensors
+      <ul>
+        <li>Accelerometers</li>
+        <li>Radar</li>
+        <li>Light</li>
+        <li>Radiation</li>
+        <li>Asteroid element component scanner</li>
+      </ul>
+    </li>
+    <li>Communication</li>
+    <li>Asteroid mining equipment operation</li>
+    <li>Weapons and shields</li>
+  </ul>
+</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h4>Roadmap</h4>
+<ul>
+  <li>✘ Save universe to disk</li>
+  <li>✘ Generate asteroid belt around a planet</li>
+  <li>✘ Generate asteroid field</li>
+  <li>✘ Compensate lag in updates</li>
+  <li>✔ Synchronization from periodics server updates</li>
+  <li>✔ Flight mechanics</li>
+  <li>✔ Shoot lasers</li>
+  <li>✔ Flight mechanics</li>
+  <li>✔ REPL</li>
+</ul>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Starstream-api maintained by <a href="https://github.com/gipsy-king">gipsy-king</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
 
   </body>
 </html>
