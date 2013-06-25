@@ -48,7 +48,8 @@
 <h4 id="info">Where can I play it?</h4>
 <p>
   Unfortunately, there is not even an alpha version avaialable yet. You may peek at your own risk at
-  the development progress here: <a href="http://spacetit.heroku.com">http://spacetit.heroku.com</a>
+  the development progress here: <a href="http://starstream.acechador.es">http://starstream.acechador.es</a> (chrome only), though
+  you might be disappointed right now. <strong>It might not even work</strong>.
 </p>
 
 <h4 id="info">Physics</h4>
@@ -58,7 +59,7 @@
 
 <h4 id="web">Web based</h4>
 <p>
-  Runs in your browser with WebGL. Has cool stuff like shaders.
+  Runs in your browser with WebGL. Has cool stuff like shaders!
 </p>
 
 <h4 id="multi">Multiplayer</h4>
@@ -73,6 +74,7 @@
   Example API features:
   <ul>
     <li>Thrusters' force</li>
+    <li>Stabilizer (align to desired rotation)</li>
     <li>Sensors
       <ul>
         <li>Accelerometers</li>
@@ -82,34 +84,45 @@
         <li>Asteroid element component scanner</li>
       </ul>
     </li>
-    <li>Communication</li>
+    <li>Communications</li>
     <li>Asteroid mining equipment operation</li>
     <li>Weapons and shields</li>
   </ul>
 </p>
 
 <h4>Roadmap</h4>
-<p>(x is time in descending order)</p>
 
-<p>Next dev release</p>
-<ul>
-  <li>✘ Save and load user program</li>
-  <li>✘ User signup, authentication</li>
+<h6>Public beta</h6>
+<ul class="roadmap">
+  <li>Have something playable that will actually entertain players to some degree</li>
 </ul>
 
-<p>First dev release</p>
-<ul>
-  <li>✘ Generate asteroid belt around a planet</li>
-  <li>✘ Save and restore universe to/from disk</li>
-  <li>✘ Generate asteroid field</li>
-  <li>✔ Always process input on server</li>
-  <li><s>✘ Compensate lag in updates</s> (not until there are bullet-like collisions)</li>
-  <li>✔ Switch to Sockjs from Socket.io</li>
-  <li>✔ Synchronization from periodics server updates</li>
-  <li>✔ Flight mechanics</li>
-  <li>✔ Shoot lasers</li>
-  <li>✔ Flight mechanics</li>
-  <li>✔ REPL</li>
+<h6>Second dev release</h6>
+<ul class="roadmap">
+  <li>Save and load user program</li>
+  <li>User signup, authentication</li>
+  <li>3D audio</li>
+  <li>LOD for asteroids or generic, out-of-view-distance entity removal</li>
+  <li>Generate asteroid belt around a planet</li>
+</ul>
+
+<h6>First dev release</h6>
+<ul class="roadmap">
+  <li>Respawn upon death</li>
+  <li>Save and restore universe to/from disk</li>
+  <li>Generate a more realistic asteroid field</li>
+  <li>"Glow" postprocessing shader (blasters, thrusters and suns)</li>
+  <li>Ship stabilizer (aligns ship to desired-viewing-direction calculating thruster forces, ship mass and current rotation velocity) (will be published to api)</li>
+  <li class="done">Pointer lock, set desired viewing direction</li>
+  <li class="done">Ship healt</li>
+  <li class="done">Always process input on server</li>
+  <li><s>Compensate lag in updates</s> (not until there are bullet-like collisions)</li>
+  <li class="done">Switch to Sockjs from Socket.io</li>
+  <li class="done">Synchronization from periodics server updates</li>
+  <li class="done">Flight mechanics</li>
+  <li class="done">Shoot lasers</li>
+  <li class="done">Flight mechanics</li>
+  <li class="done">REPL</li>
 </ul>
 
 <p>Ideas</p>
@@ -121,8 +134,8 @@
 
 <h4 id="copy">Art &amp; style</h4>
 <p>&copy; 2013 Benjamin <a href="https://github.com/gipsy-king">"GipsyKing"</a> Grosse</p>
-<p>Music &copy; 2013 Luis "Shiul93" Llamas</p>
-<p>"feisar" spaceship (or raceship) model and texture &copy; <a href="http://hexgl.bkcore.com/">BKcore</a>
+<p>Music &copy; 2013 Luis <a href="https://github.com/Shiul93">"Shiul93"</a> Llamas</p>
+<p>"feisar" spaceship (or raceship) model and texture &copy; <a href="http://hexgl.bkcore.com/">BKcore</a> (will be replaced ASAP)
 
   </body>
 </html>

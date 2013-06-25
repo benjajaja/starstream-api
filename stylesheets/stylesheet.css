@@ -430,3 +430,21 @@ Small Device Styles
   }
 
 }
+
+ul.roadmap {
+  position: relative;
+}
+ul.roadmap li {
+  list-style-type: none;
+  border-bottom: 1px dashed #ccc;
+}
+ul.roadmap li:before {
+  position: absolute;
+  left: -2px;
+  content: '✘';
+  color: #cc0000;
+}
+ul.roadmap li.done:before {
+  content: '✔';
+  color: green;
+}
