@@ -54,7 +54,7 @@
 
 <h4 id="info">Physics</h4>
 <p>
-  Crash into stuff, or smash things together. Simulation runs both on client and server!
+  Crash into stuff, or smash things together. Simulation runs both on client (instant feedback) and server!
 </p>
 
 <h4 id="web">Web based</h4>
@@ -112,11 +112,12 @@
   <li>Save and restore universe to/from disk</li>
   <li>Generate a more realistic asteroid field</li>
   <li>"Glow" postprocessing shader (blasters, thrusters and suns)</li>
+  <li>Collision damage from object's velocities + masses</li>
   <li>Ship stabilizer (aligns ship to desired-viewing-direction calculating thruster forces, ship mass and current rotation velocity) (will be published to api)</li>
   <li class="done">Pointer lock, set desired viewing direction</li>
-  <li class="done">Ship healt</li>
+  <li class="done">Ship health, damage in collision</li>
   <li class="done">Always process input on server</li>
-  <li><s>Compensate lag in updates</s> (not until there are bullet-like collisions)</li>
+  <li class="cancelled"><s>Compensate lag in updates</s> (not until there are bullet-like collisions)</li>
   <li class="done">Switch to Sockjs from Socket.io</li>
   <li class="done">Synchronization from periodics server updates</li>
   <li class="done">Flight mechanics</li>
@@ -125,10 +126,11 @@
   <li class="done">REPL</li>
 </ul>
 
-<p>Ideas</p>
+<p>Far-future ideas:</p>
 <ul>
   <li>Land on planets</li>
   <li>WebRTC camera/microphone comms</li>
+  <li>Assemble your spaceship (thrusters, compartments, solar panels, engine parts, sensors, guns...)</li>
 </ul>
 
 

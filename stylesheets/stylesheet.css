@@ -448,3 +448,8 @@ ul.roadmap li.done:before {
   content: '✔';
   color: green;
 }
+ul.roadmap li.cancelled:before {
+  content: '✁';
+  font-size: 18px;
+  color: black;
+}
