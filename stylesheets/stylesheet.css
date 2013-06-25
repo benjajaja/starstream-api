@@ -433,6 +433,7 @@ Small Device Styles
 
 ul.roadmap {
   position: relative;
+  border-top: 1px dashed #ccc;
 }
 ul.roadmap li {
   list-style-type: none;
@@ -452,4 +453,8 @@ ul.roadmap li.cancelled:before {
   content: '✁';
   font-size: 18px;
   color: black;
+}
+ul.roadmap li.info:before {
+  content: 'ℹ';
+  color: #4444ff;
 }
