@@ -458,3 +458,7 @@ ul.roadmap li.info:before {
   content: 'ℹ';
   color: #4444ff;
 }
+ul.roadmap li.warning:before {
+  content: '⚠';
+  color: #FFCC00;
+}

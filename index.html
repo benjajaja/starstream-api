@@ -94,26 +94,28 @@
 
 <h6>Current dev demo</h6>
 <ul class="roadmap">
-  <li class="done">REPL</li>
+  <li class="warning">REPL</li>
   <li class="done">Flight mechanics</li>
   <li class="done">Shoot lasers</li>
-  <li class="done">Flight mechanics</li>
-  <li class="done">Synchronization from periodics server updates</li>
+  <li class="done">Synchronization from periodic server updates</li>
   <li class="done">Switch to Sockjs from Socket.io</li>
   <li class="cancelled"><s>Compensate lag in updates</s> (not until there are bullet-like collisions)</li>
   <li class="done">Always process input on server</li>
   <li class="done">Ship health, damage on collision</li>
-  <li class="done">Pointer lock, set desired viewing direction</li>
-  <li>Ship stabilizer (aligns ship to desired-viewing-direction calculating thruster forces, ship mass and current rotation velocity) (will be published to api)</li>
+  <li class="done">Pointer lock</li>
+  <li>Camera-look, FPS style</li>
+  <li>Ship stabilizer (aligns ship to desired-viewing-direction calculating thruster forces, ship mass and current rotation velocity) (will be published to api and replaceable by custom code)</li>
   <li>Collision damage from object's velocities + masses</li>
-  <li>"Glow" postprocessing shader (blasters, thrusters and suns)</li>
-  <li>Generate a more realistic asteroid field</li>
-  <li>Save and restore universe to/from disk</li>
-  <li>Respawn upon death</li>
+  <li class="done">"Glow" postprocessing shader</li>
 </ul>
 
 <h6>First development "release"</h6>
 <ul class="roadmap">
+  <li>Save and restore universe to/from disk</li>
+  <li>Respawn upon death</li>
+  <li>Generate a more realistic asteroid field</li>
+  <li>Additional scene for planets in skybox</li>
+  <li>Render skybox background (stars and nebulas) into a skybox cube</li>
   <li>Generate asteroid belt around a planet</li>
   <li>LOD for asteroids or generic, out-of-view-distance entity removal</li>
   <li>3D audio</li>
