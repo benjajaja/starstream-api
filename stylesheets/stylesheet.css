@@ -462,3 +462,11 @@ ul.roadmap li.warning:before {
   content: '⚠';
   color: #FFCC00;
 }
+ul.roadmap li.progressing:before {
+  content: '⚙';
+  color: black;
+}
+ul.roadmap li.debated:before {
+  content: '⁇';
+  color: black;
+}
